@@ -2,10 +2,11 @@
   "name": "full-backend-zero",
   "version": "1.0.0",
   "description": "Quoc Huu Fullstack",
-  "main": "server.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "div": "node server.js"
+    "test": "echo \"Error: no test s  pecified\" && exit 1",
+    "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
+    "start": "nodemon --inspect src/index.js"
   },
   "keywords": [
     "nodejs",
@@ -14,6 +15,13 @@
   "author": "huunq",
   "license": "ISC",
   "dependencies": {
-    "express": "4.18.2"
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.3"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.4"
   }
 }
